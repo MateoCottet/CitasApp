@@ -4,7 +4,6 @@ import Boton from './Boton.jsx';
 import './App.css';
 import Listado from './Listado.jsx';
 import React, { useState } from 'react';
-import Cita from './Cita.jsx';
 function App() {
   const [citas, setCitas] = useState([]);
   const eliminarCita = (index)=> {
@@ -45,7 +44,7 @@ function App() {
               </form>
             </div>
             <div className="one-half column">
-            <SubTitulo titulo="Administrar mis citas"></SubTitulo>
+            <SubTitulo titulo="Mis citas"></SubTitulo>
               <Listado citas={citas} eliminarCita = {eliminarCita}></Listado>
             </div>
           </div>
